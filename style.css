@@ -1,0 +1,123 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.one{
+	background-color: white;
+	background-image: url(background.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	position: relative;
+
+}
+
+.absolute img{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	padding: 5px;
+	border: 1px solid lightblue;
+}
+.absolute h3{
+	font-size: 18px;
+	font-weight: 600;
+	margin: 15px 0;
+}
+.absolute i{
+	color: palevioletred;
+	font-size: 25px;
+	margin: 0 5px;
+}
+.box-1 {
+	top: 53%;
+	left: 65%;
+}
+.box-2 {
+	top: 18%;
+	right: 18%;
+}
+.box-3 {
+	top: 53%;
+	left: 40%;
+}
+.box-4 {
+	top: 18%;
+	left: 40%;
+}
+.comon{
+	
+	position: absolute;
+	background-color: azure;
+	padding: 10px;
+	width: 250px;
+	height: 190px;
+	border-radius: 10px;
+	text-align: center;
+}
+.team-sec{
+	position: absolute;
+	top: 50%;
+	left: 8%;
+	transform: translateY(-50%);
+}
+.team-sec h1{
+	font-size: 50px;
+	font-weight: 500;
+	padding: 10px;
+}
+.team-sec p{
+	color: #777;
+	text-align: center;
+	font-size: 15px;
+	margin-top: 5px;
+	
+}
+
+
+
+
+@media only screen and (max-width:600px){
+	.one{
+		
+		background-image: linear-gradient(to right,#00ff4085,#b71313b3) ,url(image.jpg);
+		
+		
+	
+	}
+	.comon{
+	
+		position: unset;
+		
+	}
+	[class^="box"]{
+		margin: 20px 0;
+		text-align: center;
+		
+		margin-left: 100px;
+		
+	}
+	.team-sec{
+		position: unset;
+		transform: translateY(0px);
+		text-align: center;
+		padding: 5px;
+	
+	}
+	.team-sec h1{
+		font-size: 35px;
+		font-weight: 500;
+		padding: 10px;
+		color: white;
+	}
+	.team-sec p{
+		color: rgb(39, 221, 48);
+		text-align: center;
+		font-size: 16px;
+		margin-top: 5px;
+		
+	}
+	
+}
